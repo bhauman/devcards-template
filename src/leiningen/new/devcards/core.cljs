@@ -17,9 +17,9 @@
 
 (defcard {{name}}-intro-card
   (dc/markdown-card
-   "# Hey there"
+   "# This is the first card for **{{ name }}**"
    "I can be found in `src/{{name}}/core.cljs`"
    "If you add cards to this file, they will appear here on this page."))
 
-(println "If you change this line you will see the result in the browsers console.")
+(println "If you change this line, you will see the result in the browser's console.")
 

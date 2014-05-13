@@ -15,6 +15,6 @@
 (defcard intro
   (dc/markdown-card
    "# Devcards for {{ name }}"
-   "I can be found in `devcards_src/{{sanitized}}_devcards/core.cljs`"
+   "I can be found in `devcards_src/{{sanitized}}_devcards/core.cljs`."
    "If you add cards to this file, they will appear here on this page."))
 

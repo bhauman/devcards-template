@@ -1,6 +1,6 @@
 (ns {{name}}.core
     (:require
-     [devcards.core :as dc]
+     [devcards.core :as dc :include-macros true]
      #_[om.core :as om :include-macros true]
      #_[sablono.core :as sab :include-macros true])
     (:require-macros
@@ -17,9 +17,10 @@
 
 (defcard {{name}}-intro-card
   (dc/markdown-card
-   "# This is the first card for **{{ name }}**"
-   "I can be found in `src/{{name}}/core.cljs`"
-   "If you add cards to this file, they will appear here on this page."))
+   "# This is the first card for **{{ name }}**
+
+    I can be found in `src/{{name}}/core.cljs`
+    If you add cards to this file, they will appear here on this page."))
 
 (println "If you change this line, you will see the result in the browser's console.")
 

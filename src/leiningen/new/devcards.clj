@@ -15,7 +15,5 @@
              ["devcards_src/{{sanitized}}_devcards/core.cljs" (render "devcards-core.cljs" data)]
              ["resources/public/devcards/index.html" (render "resources/index.html" data)]
              #_["resources/public/index.html" (render "resources/app-index.html" data)]
-             ["resources/public/devcards/css/devcards.css" (render "resources/css/devcards.css" data)]
-             ["resources/public/devcards/css/rendered_edn.css" (render "resources/css/rendered_edn.css" data)]
              ["resources/public/css/{{sanitized}}_style.css" (render "style.css" data)]             
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)])))

@@ -10,10 +10,12 @@
 (enable-console-print!)
 
 (devcards.core/start-devcard-ui!)
-
 (devcards.core/start-figwheel-reloader!)
 
-(dc/defcard devcard-intro
+;; remember to run lein figwheel and then browse to
+;; http://localhost:3449/devcards/index.html
+
+(defcard devcard-intro
   (dc/markdown-card
    "# Devcards for {{ name }}
 

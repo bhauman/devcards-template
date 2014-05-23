@@ -9,7 +9,7 @@
 
   :profiles { :dev {:dependencies [[devcards "0.1.0-SNAPSHOT"]]
                     :plugins [[lein-cljsbuild "1.0.3"]
-                              [lein-figwheel "0.1.2-SNAPSHOT"]] }}
+                              [lein-figwheel "0.1.3-SNAPSHOT"]] }}
   
   :source-paths ["src"]
 
@@ -21,6 +21,7 @@
                                    :output-dir "resources/public/devcards/js/compiled/out"
                                    :optimizations :none
                                    :source-map true}}
+                       
                        #_{:id "app"
                           :source-paths ["src"]
                           :compiler {
@@ -30,4 +31,3 @@
                                      :source-map true}}]}
   
   :figwheel { :css-dirs ["resources/public/css"] })
-

@@ -21,5 +21,17 @@
 
     I can be found in `devcards_src/{{sanitized}}_devcards/core.cljs`.
 
-    If you add cards to this file, they will appear here on this page."))
+    If you add cards to this file, they will appear here on this page.
+
+    You can add devcards to any file as long as you require
+    `devcards.core` like so:
+
+    ```
+    (:require [devcards.core :as dc :include-macros true])
+    ```
+
+    As you add cards to other namspaces, those namspaces will
+    be listed on the Devcards **home** page.
+
+    <a href=\"https://github.com/bhauman/devcards/blob/master/example_src/devdemos/core.cljs\" target=\"_blank\">Here are some Devcard examples</a>"))
 

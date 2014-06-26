@@ -1,4 +1,4 @@
-(defproject devcards/lein-template "0.1.0"
+(defproject devcards/lein-template "0.1.1"
   :description "A Leinigen template for devcards"
   :url "https://github.com/bhauman/devcards-template"
   :license {:name "Eclipse Public License"

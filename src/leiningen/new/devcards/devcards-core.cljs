@@ -1,7 +1,7 @@
 (ns {{name}}-devcards.core
     (:require
      [devcards.core :as dc :include-macros true]
-     [{{name}}.core :as {{name}}] 
+     [{{name}}.core :as {{name}}]
      #_[om.core :as om :include-macros true]
      #_[sablono.core :as sab :include-macros true])
     (:require-macros

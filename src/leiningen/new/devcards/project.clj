@@ -5,11 +5,11 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2202"]]
+                 [org.clojure/clojurescript "0.0-2740"]]
 
-  :profiles { :dev {:dependencies [[devcards "0.1.2-SNAPSHOT"]]
-                    :plugins [[lein-cljsbuild "1.0.3"]
-                              [lein-figwheel "0.1.4-SNAPSHOT"]] }}
+  :profiles { :dev {:dependencies [[devcards "0.1.3-SNAPSHOT"]]
+                    :plugins [[lein-cljsbuild "1.0.4"]
+                              [lein-figwheel "0.2.2-SNAPSHOT"]] }}
 
   :source-paths ["src"]
 

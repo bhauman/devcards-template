@@ -12,7 +12,7 @@
                  #_[reagent "0.5.0"]]
 
   :plugins [[lein-cljsbuild "1.1.0"]
-            [lein-figwheel "0.3.9"]]
+            [lein-figwheel "0.4.0"]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]

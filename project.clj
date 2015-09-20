@@ -1,5 +1,5 @@
-(defproject devcards/lein-template "0.2.0-3"
-  :description "A Leinigen template for devcards"
+(defproject devcards/lein-template "0.2.0-4"
+  :description "A Leinigen template for Devcards"
   :url "https://github.com/bhauman/devcards-template"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}

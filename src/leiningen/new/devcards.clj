@@ -14,7 +14,7 @@
                     ""))
     (->files data
              ["project.clj" (render "project.clj" data)]
-             ["resources/public/devcards.html" (render "resources/index.html" data)]
+             ["resources/public/cards.html" (render "resources/index.html" data)]
              ["resources/public/index.html" (render "resources/app_index.html" data)]             
              ["resources/public/css/{{sanitized}}_style.css" (render "style.css" data)]             
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)])))

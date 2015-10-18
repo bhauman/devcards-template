@@ -6,13 +6,13 @@
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.122"]
-                 [devcards "0.2.0-7"]
+                 [devcards "0.2.0-8"]
                  [sablono "0.3.6"]
                  #_[org.omcljs/om "0.9.0"]
                  #_[reagent "0.5.1"]]
 
   :plugins [[lein-cljsbuild "1.1.0"]
-            [lein-figwheel "0.4.0"]]
+            [lein-figwheel "0.4.1"]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]

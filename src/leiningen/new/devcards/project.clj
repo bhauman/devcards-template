@@ -5,14 +5,14 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.122"]
-                 [devcards "0.2.0-8"]
-                 [sablono "0.3.6"]
+                 [org.clojure/clojurescript "1.7.170"]
+                 [devcards "0.2.1"]
+                 [sablono "0.4.0"]
                  #_[org.omcljs/om "0.9.0"]
                  #_[reagent "0.5.1"]]
 
   :plugins [[lein-cljsbuild "1.1.0"]
-            [lein-figwheel "0.4.1"]]
+            [lein-figwheel "0.5.0"]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]

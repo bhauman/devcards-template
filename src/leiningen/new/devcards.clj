@@ -10,7 +10,7 @@
               :sanitized (name-to-path name)}]
     (main/info (str "Generating fresh 'lein new' devcards project.\n"
                     "cd into your project directory\n"
-                    "Run 'lein figwheel' and then open localhost:3449/cards.html in your browser."
+                    "Run 'lein figwheel' and then open http://localhost:3449/cards.html in your browser."
                     ""))
     (->files data
              ["project.clj" (render "project.clj" data)]

@@ -4,6 +4,8 @@ A Leiningen template for [devcards](https://github.com/bhauman/devcards).
 
 ## Usage
 
+Make sure you have the [latest version of leiningen installed](https://github.com/technomancy/leiningen#installation).
+
 Type the following to create a fresh project with devcards setup for you:
 
 ```

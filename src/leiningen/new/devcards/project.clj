@@ -8,11 +8,18 @@
                  [org.clojure/clojurescript "1.7.170"]
                  [devcards "0.2.1-5"]
                  [sablono "0.5.3"]
+                 
+                 ;; need to specify this for sablono
+                 ;; when not using devcards
+                 [cljsjs/react "0.14.3-0"]
+                 [cljsjs/react-dom "0.14.3-1"]
+                 [cljsjs/react-dom-server "0.14.3-0"]
+
                  #_[org.omcljs/om "0.9.0"]
                  #_[reagent "0.5.1"]]
 
-  :plugins [[lein-cljsbuild "1.1.2" :exclusions [org.clojure/clojure]]
-            [lein-figwheel "0.5.0-4"]]
+  :plugins [[lein-figwheel "0.5.0-5"]
+            [lein-cljsbuild "1.1.2" :exclusions [org.clojure/clojure]]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]

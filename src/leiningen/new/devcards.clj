@@ -8,6 +8,10 @@
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)}]
+    (when (= name "devcards")
+      (main/abort
+       (str "Cannot name a devcards project \"devcards\" the namspace will clash.\n"
+            "Please choose a different name, maybe \"devcardtry\"?")))
     (main/info (str "Generating fresh 'lein new' devcards project.\n"
                     "cd into your project directory\n"
                     "Run 'lein figwheel' and then open http://localhost:3449/cards.html in your browser."

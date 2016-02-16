@@ -13,7 +13,7 @@
 (devcards.core/start-figwheel-reloader!)
 
 ;; remember to run lein figwheel and then browse to
-;; http://localhost:3449/devcards/index.html
+;; http://localhost:3449/cards.html
 
 (defcard devcard-intro
   (dc/markdown-card

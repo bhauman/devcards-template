@@ -6,10 +6,10 @@
 
   :min-lein-version "2.5.3"
   
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.170"]
-                 [devcards "0.2.1-5"]
-                 [sablono "0.5.3"]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.7.228"]
+                 [devcards "0.2.1-6"]
+                 [sablono "0.6.2"]
                  
                  ;; need to specify this for sablono
                  ;; when not using devcards

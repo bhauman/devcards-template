@@ -8,7 +8,7 @@
   
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
-                 [devcards "0.2.2"]
+                 [devcards "0.2.3"]
                  [sablono "0.7.4"]
                  
                  ;; need to specify this for sablono
@@ -19,8 +19,8 @@
                  #_[reagent "0.6.0"]
                  ]
 
-  :plugins [[lein-figwheel "0.5.8"]
-            [lein-cljsbuild "1.1.4" :exclusions [org.clojure/clojure]]]
+  :plugins [[lein-figwheel "0.5.9"]
+            [lein-cljsbuild "1.1.5" :exclusions [org.clojure/clojure]]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]
@@ -58,8 +58,8 @@
 
   :figwheel { :css-dirs ["resources/public/css"] }
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.8.2"]
-                                  [figwheel-sidecar "0.5.8"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.2"]
+                                  [figwheel-sidecar "0.5.9"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]

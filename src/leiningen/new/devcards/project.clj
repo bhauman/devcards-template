@@ -33,7 +33,7 @@
                         :figwheel { :devcards true  ;; <- note this
                                    ;; :open-urls will pop open your application
                                    ;; in the default browser once Figwheel has
-                                   ;; started and complied your application.
+                                   ;; started and compiled your application.
                                    ;; Comment this out once it no longer serves you.
                                    :open-urls ["http://localhost:3449/cards.html"]}
                         :compiler { :main       "{{name}}.core"

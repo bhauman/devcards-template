@@ -2,11 +2,19 @@
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]
             [leiningen.core.main :as main]))
 
+(defn java9? []
+  (-> (System/getProperty "java.version")
+      (clojure.string/split #"_")
+      first
+      (compare "9.0.0")
+      (>= 0)))
+
 (def render (renderer "devcards"))
 
 (defn devcards
   [name]
   (let [data {:name name
+              :java9? (java9?)
               :sanitized (name-to-path name)}]
     (when (= name "devcards")
       (main/abort
@@ -19,8 +27,8 @@
                     ""))
     (->files data
              ["project.clj" (render "project.clj" data)]
-             ["dev/user.clj" (render "user.clj" data)]             
+             ["dev/user.clj" (render "user.clj" data)]
              ["resources/public/cards.html" (render "resources/index.html" data)]
-             ["resources/public/index.html" (render "resources/app_index.html" data)]             
-             ["resources/public/css/{{sanitized}}_style.css" (render "style.css" data)]             
+             ["resources/public/index.html" (render "resources/app_index.html" data)]
+             ["resources/public/css/{{sanitized}}_style.css" (render "style.css" data)]
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)])))

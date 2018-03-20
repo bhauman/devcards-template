@@ -5,12 +5,17 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :min-lein-version "2.7.1"
-  
+
+  {{#java9?}} ;; This Figwheel project was generated with Java 9
+              ;; and ClojureScript currently needs this flag added to the compiler
+              ;; under Java 9
+  :jvm-opts ["--add-modules" "java.xml.bind"]{{/java9?}}
+
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
                  [devcards "0.2.3"]
                  [sablono "0.7.4"]
-                 
+
                  ;; need to specify this for sablono
                  ;; when not using devcards
                  [cljsjs/react "15.3.1-0"]
@@ -24,7 +29,7 @@
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                     "target"]
-  
+
   :source-paths ["src"]
 
   :cljsbuild {
